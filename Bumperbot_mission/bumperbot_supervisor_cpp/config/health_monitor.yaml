@@ -1,0 +1,19 @@
+navigation_health_monitor:
+  ros__parameters:
+    hardware_id: "bumperbot"
+    map_frame: "map"
+    odom_frame: "odom"
+    base_frame: "base_footprint"
+
+    position_covariance_warn: 0.05
+    position_covariance_error: 0.25
+    yaw_covariance_warn: 0.05
+    yaw_covariance_error: 0.25
+
+    min_scan_rate: 5.0
+    min_odom_rate: 10.0
+    rate_window: 5.0
+    stale_timeout: 2.0
+
+    max_aborted_goals_warn: 3
+    diagnostics_period: 1.0

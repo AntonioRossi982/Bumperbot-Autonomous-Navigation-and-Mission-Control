@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>bumperbot_supervisor_cpp</name>
+  <version>0.1.0</version>
+  <description>
+    Mission Supervisor (C++, `rclcpp_action`): translates symbolic commands (`go_to room_a`) 
+    into `NavigateToPose` goals sent to Nav2 through an action client, and monitors 
+    the robot's navigation status while the navigation task is running.
+  </description>
+  <maintainer email="antonio.rossi9829@gmail.com">TODO</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>rclcpp_action</depend>
+  <depend>nav2_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>tf2</depend>
+  <depend>tf2_ros</depend>
+  <depend>tf2_geometry_msgs</depend>
+  <depend>bumperbot_msgs</depend>
+  <depend>action_msgs</depend>
+  <depend>diagnostic_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>unique_identifier_msgs</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

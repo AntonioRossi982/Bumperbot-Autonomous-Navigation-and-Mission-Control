@@ -1,0 +1,17 @@
+mission_commander:
+  ros__parameters:
+    max_retries: 3
+    goal_frame_id: "map"
+    locations:
+      room_a:
+        x: 2.0
+        y: 1.0
+        theta: 0.0
+      room_b:
+        x: 4.5
+        y: -1.2
+        theta: 1.57
+      charging_station:
+        x: 0.0
+        y: 0.0
+        theta: 3.14
